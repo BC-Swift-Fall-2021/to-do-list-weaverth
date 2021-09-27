@@ -44,6 +44,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Izo-ub-D0G">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="BqF-mr-SYf">
+                            <connections>
+                                <action selector="editButtonPressed:" destination="BYZ-38-t0r" id="Ueh-eu-zKn"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5Ep-LR-aV8">
                             <connections>
                                 <segue destination="2le-HA-ggS" kind="presentation" identifier="AddDetail" id="a5k-v0-7jH"/>
@@ -51,6 +56,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addBarButton" destination="5Ep-LR-aV8" id="jeC-rJ-JsV"/>
                         <outlet property="tableView" destination="Rcn-Pb-HGT" id="YJU-xs-uWU"/>
                     </connections>
                 </viewController>
@@ -63,7 +69,7 @@
             <objects>
                 <tableViewController id="Re5-4P-N0m" customClass="ToDoDetailTableViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ss9-Il-QkP">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -204,7 +210,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bwK-z1-xXY"/>
+        <segue reference="qTh-Up-wii"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
