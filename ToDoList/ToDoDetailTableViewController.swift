@@ -24,7 +24,6 @@ class ToDoDetailTableViewController: UITableViewController {
     @IBOutlet weak var reminderSwitch: UISwitch!
     @IBOutlet weak var dateLabel: UILabel!
     
-    
     var toDoItem: ToDoItem!
     
     let datePickerIndexPath = IndexPath(row: 1, section: 1)
