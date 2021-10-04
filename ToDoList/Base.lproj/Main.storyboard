@@ -109,6 +109,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
                                                         <action selector="nameField:" destination="LCr-wU-n70" eventType="editingDidEnd" id="FSc-Kr-ugS"/>
+                                                        <action selector="textFieldEditingChanged:" destination="Re5-4P-N0m" eventType="editingChanged" id="aC1-Vz-FhX"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
